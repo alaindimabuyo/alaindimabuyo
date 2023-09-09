@@ -4,8 +4,9 @@
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
-### ⚙️ &nbsp;GitHub Analytics
+I'm a __frontend developer__ and __technical writer__ based in __Philippines__ . Always curious to learn cutting edge technology. Competitive coding and motor sports boost my adrenaline.
 
+### ⚙️ &nbsp;GitHub Analytics
 <p align="center">
 <a href="https://github.com/AVS1508">
   <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=alaindimabuyo&show_icons=true&theme=vue-dark&include_all_commits=true&count_private=true" />
