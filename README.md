@@ -1,7 +1,8 @@
 ## 👋 &nbsp;Hey there! I'm Alain
 
-<p><em>Software Engineer at <a href="http://www.pacificprime.com">Pacific Prime</a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
+<p><em>Software Engineer at <a href="http://www.pacificprime.com">Pacific Prime</a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> </em></p>
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
+
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
 ### ⚙️ &nbsp;GitHub Analytics
 
