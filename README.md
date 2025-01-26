@@ -4,7 +4,7 @@
 <img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
-I'm a __fullstack developer__ and __technical writer__ based in __Philippines__ . Always curious to learn cutting edge technology. Competitive coding and motor sports boost my adrenaline.
+I'm a __fullstack developer__ based in __Philippines__ . Always curious to learn cutting edge technology. Competitive coding and motor sports boost my adrenaline.
 
 ### ⚙️ &nbsp;GitHub Analytics
 <p align="center">
