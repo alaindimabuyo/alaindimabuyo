@@ -23,6 +23,21 @@ This skill adds two rules.
 
 **2. A visual element may only state a true fact.** A discount badge needs a real previous price: for EU consumers, the lowest price in the 30 days before the reduction (Price Indication Directive Art. 6a, via the Omnibus Directive). Raising the price before a sale to show a bigger percent is a fake reference price; do not design the badge, replace it with the real one or none. A rating shows its real count ("4.6 · 212 reviews"). A total in the button is the real total, marked "est." if the final weight can vary.
 
+## Step 0: See the screen first (Playwright MCP)
+Before any audit, critique, or redesign, open the real screen in the Playwright MCP browser. Do not audit from code, a description, or memory of the page.
+
+1. **Get the URL.** A running local dev server or a deployed URL of the screen. If none is given, ask for it, or start the project's dev server. If the screen cannot be opened at all (only a screenshot or a brief exists), say so at the top of the output and mark every finding "unverified in browser".
+2. **Open it:** `browser_navigate` to the URL. If the screen needs sign-in or a specific state (item in cart, sale product, product with no reviews), reach that state with real clicks and typing, not by editing the DOM.
+3. **Capture both widths:** `browser_resize` to 390×844 (mobile), then `browser_take_screenshot` (full page) and `browser_snapshot` (accessibility tree); repeat at 1440×900 (desktop).
+4. **Read what rendered:** look at every screenshot before writing findings. Use the snapshot for control names, labels, and headings. Use `browser_evaluate` to read computed colors and font sizes when a contrast or size finding depends on the exact value.
+5. **Check the console:** `browser_console_messages` for errors that break the screen.
+6. **Walk the flow:** scroll the full page and capture it mid-scroll (sticky bar, header behavior); change the quantity and confirm the total updates; open at least one bright-image product, one long-title product, and one with no reviews for the catalog stress test (rule 1).
+7. **Close the browser** (`browser_close`) when done.
+
+Every finding in the audit cites what it came from: a screenshot (width), a snapshot entry, or a measured value. A finding with no browser evidence is marked "unverified in browser".
+
+If the Playwright MCP server is not connected, stop and tell the user; do not fall back to guessing the layout. If navigation fails with "Browser is already in use", another session holds that browser profile: try any other connected Playwright MCP server, otherwise wait and retry, and never kill another session's browser or delete its lock file.
+
 ## Step 1: Fix pass (check each, fix what fails)
 
 | # | Area | Mistake | Fix |
@@ -56,7 +71,7 @@ This skill adds two rules.
 - `[NEEDS: ...]` list
 
 ## Auditing an existing screen
-Report pass/fail with the fix for each row of Step 1, then:
+Run Step 0 first. Report pass/fail with the fix for each row of Step 1, then:
 16. The design holds for every catalog stress case
 17. Every badge, rating, and total states a true, sourced fact
 18. Main action and quantity stay reachable while scrolling

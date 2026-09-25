@@ -50,6 +50,21 @@ This skill adds two rules.
 | Loss aversion | Kahneman & Tversky, 1979 (prospect theory) | Losses weigh about twice as much as equal gains | This is loss aversion, not "status quo bias" (a related, separate effect) |
 | Contrast / anchoring | Tversky & Kahneman, 1974 | Judgments shift toward a number seen just before | |
 
+## Step 0: See the screen first (Playwright MCP)
+Before any audit, critique, or redesign, open the real screen in the Playwright MCP browser. Do not audit from code, a description, or memory of the page.
+
+1. **Get the URL.** A running local dev server or a deployed URL of the screen. If none is given, ask for it, or start the project's dev server. If the screen cannot be opened at all (only a screenshot or a brief exists), say so at the top of the output and mark every finding "unverified in browser".
+2. **Open it:** `browser_navigate` to the URL. If the screen needs sign-in or a specific state (form filled, free limit reached, upgrade prompt shown), reach that state with real clicks and typing, not by editing the DOM.
+3. **Capture both widths:** `browser_resize` to 390×844 (mobile), then `browser_take_screenshot` (full page) and `browser_snapshot` (accessibility tree); repeat at 1440×900 (desktop).
+4. **Read what rendered:** look at every screenshot before writing findings. Use the snapshot for control names, labels, and headings. Use `browser_evaluate` to read computed colors and font sizes when a contrast or size finding depends on the exact value.
+5. **Check the console:** `browser_console_messages` for errors that break the screen.
+6. **Walk the flow:** go through the flow step by step (form, signup, onboarding, limit, upgrade, checkout) and capture each step. Record the real defaults, the real progress shown, what is given before the account wall, the exact dismiss copy, and the prices shown together.
+7. **Close the browser** (`browser_close`) when done.
+
+Every finding in the audit cites what it came from: a screenshot (width), a snapshot entry, or a measured value. A finding with no browser evidence is marked "unverified in browser".
+
+If the Playwright MCP server is not connected, stop and tell the user; do not fall back to guessing the layout. If navigation fails with "Browser is already in use", another session holds that browser profile: try any other connected Playwright MCP server, otherwise wait and retry, and never kill another session's browser or delete its lock file.
+
 ## Step 1: Map the decision points
 For each screen in the flow, list: what the user must decide, how many fields or choices, what they get before they give anything, and the exit option. Output a table (screen, decisions, value given first, exit copy, principle to apply).
 
@@ -64,7 +79,7 @@ Per screen, choose only the principles that fit (usually 1 or 2). Check each aga
 - `[NEEDS: ...]` list
 
 ## Auditing an existing flow
-Report pass/fail with the fix for each:
+Run Step 0 first. Report pass/fail with the fix for each:
 1. Forms pre-fill the common or safest value; no pre-ticked paid extras or opt-ins
 2. Onboarding progress never starts at 0% and never starts above the real steps done
 3. Free results or tools give real value before any account wall
