@@ -22,7 +22,7 @@ Full-stack developer based in Madrid. I build and ship web products end to end: 
 | [TaskLuid](https://taskluid.com) | Task and project management app |
 | [LuidSpeak](https://luidspeak.com) | Language learning platform with structured lessons and voice practice |
 | [LuidKit](https://luidkit.com) | File conversion and video editing tools |
-| [LuidGPT](https://luidgpt.com) | AI chat workspace |
+| [LuidGPT](https://luidgpt.com) | AI generation tools for creating content |
 
 ## Get in touch
 
