@@ -27,7 +27,3 @@ Full-stack developer based in Madrid. I build and ship web products end to end: 
 ## Get in touch
 
 [LinkedIn](https://www.linkedin.com/in/alaindimabuyo/) · [Email](mailto:xalaindimabuyo@gmail.com) · [Portfolio](https://alaindimabuyo.com)
-
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alaindimabuyo&layout=compact&hide_border=true&langs_count=6" />
-</p>
