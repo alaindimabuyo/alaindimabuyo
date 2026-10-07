@@ -1,15 +1,30 @@
-## 👋 &nbsp;Hey there! I'm Alain
+# Alain Dimabuyo
 
-<img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
+Full-stack developer based in Madrid. I build and ship web products end to end: frontend, APIs, databases, payments and deployment.
 
-### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
-I'm a __fullstack developer__ based in __Madrid__ . Always curious to learn cutting edge technology. Competitive coding and motor sports boost my adrenaline.
+## What I work with
 
-### ⚙️ &nbsp;GitHub Analytics
+![JavaScript](https://img.shields.io/badge/JavaScript-111?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![TypeScript](https://img.shields.io/badge/TypeScript-111?style=flat-square&logo=typescript&logoColor=3178C6)
+![React](https://img.shields.io/badge/React-111?style=flat-square&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-111?style=flat-square&logo=nodedotjs&logoColor=5FA04E)
+![PHP](https://img.shields.io/badge/PHP-111?style=flat-square&logo=php&logoColor=777BB4)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111?style=flat-square&logo=postgresql&logoColor=4169E1)
+![Docker](https://img.shields.io/badge/Docker-111?style=flat-square&logo=docker&logoColor=2496ED)
+
+## Selected work
+
+| Project | What it is |
+| --- | --- |
+| [ResumeLuid](https://resumeluid.com) | Resume builder with templates, PDF/DOCX export and ATS checks |
+| [TaskLuid](https://taskluid.com) | Task and project management app |
+| LuidSpeak | Language learning platform with structured lessons and voice practice |
+| LuidKit | File conversion and video editing tools |
+
+## Get in touch
+
+[LinkedIn](https://www.linkedin.com/in/alaindimabuyo/) · [Email](mailto:xalaindimabuyo@gmail.com) · [Portfolio](https://alaindimabuyo.com)
+
 <p align="center">
-<a href="https://github.com/AVS1508">
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=alaindimabuyo&layout=compact&exclude_lang=java+r&theme=vue-dark" />
-</a>
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alaindimabuyo&layout=compact&hide_border=true&langs_count=6" />
 </p>
-
-<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> 😊</em>
